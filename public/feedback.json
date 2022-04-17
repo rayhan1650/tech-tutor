@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/vk6vMRX/jeffrey-keenan.jpg",
+    "name": "Jeffrey Keenan",
+    "text": "You helped me get my Angular developer job. Your classes are easy to understand technically, but I also needed your words 'you can do this' encouragement. It helped me be patient and focus."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/jvQZddH/alex-suprun.jpg",
+    "name": "Alex Suprun",
+    "text": "Just finished the React Course  . This guy just covered the every little possible thing in his course regarding react and thinking like a better software developer. Thanks once again sir. You are truly an inspiration."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/pn44VKV/julian-wan.jpg",
+    "name": "Julian Wan",
+    "text": "Amazing JS course, for beginners as well as professionals. You explained in-depth concepts of each module of ES6 with best practices. I had learned in the course was used in real world applications"
+  }
+]

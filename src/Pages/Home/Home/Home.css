@@ -1,5 +1,5 @@
 .my-banner {
-  height: 90vh;
+  height: 95vh;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,12 +9,17 @@
   font-size: 60px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .my-banner {
-    height: 50vh;
+    height: 40vh;
   }
 
   .my-banner h1 {
     font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .my-banner h1 {
+    font-size: 35px;
   }
 }

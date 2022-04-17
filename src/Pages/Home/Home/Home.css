@@ -1,0 +1,20 @@
+.my-banner {
+  height: 90vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.my-banner h1 {
+  font-size: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-banner {
+    height: 50vh;
+  }
+
+  .my-banner h1 {
+    font-size: 20px;
+  }
+}

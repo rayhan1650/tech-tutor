@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "price": 83,
+    "img": "https://i.ibb.co/C0sCcrq/Java-Script.png",
+    "name": "JavaScript",
+    "text": "JavaScript is one of the most popular programming languages in the world.Companies like Walmart, Netflix, and PayPal run big internal applications around JavaScript.This course is the ideal starting point for anyone who wants to master the fundamentals of JavaScript."
+  },
+  {
+    "id": 2,
+    "price": 136,
+    "img": "https://i.ibb.co/6XTfWm8/Angular.png",
+    "name": "AngularJs",
+    "text": "Angular is one of the most popular frameworks for building client apps with HTML, CSS and TypeScript.This course is a full-on, deep-dive into Angular that will give you the competitive edge you're looking for. I share tips for best practices, common mistakes and practical shortcuts"
+  },
+  {
+    "id": 3,
+    "price": 145,
+    "img": "https://i.ibb.co/5xh1Nm0/ReactJs.png",
+    "name": "ReactJs",
+    "text": "What else do you expect from a JavaScript library that was developed by Facebook?But seriously, if you don't know how to build apps with React - then you're falling behind the curve. It has quickly become the most popular JavaScript library since its release in 2011."
+  },
+  {
+    "id": 4,
+    "price": 146,
+    "img": "https://i.ibb.co/JmRkHG0/VueJs.png",
+    "name": "VueJs",
+    "text": "Frontend frameworks like Vue JS are extremely popular because they give us this reactive, great user experience we know from mobile apps - but now in the browser! No wonder that jobs requiring frontend framework skills like VueJS are amongst the best paid ones in the industry!"
+  },
+  {
+    "id": 5,
+    "price": 148,
+    "img": "https://i.ibb.co/5M5V9bK/NodeJs.png",
+    "name": "NodeJs",
+    "text": "Want to learn Node.js, but are tired of wordy and slow instructors who talk to you like you've never coded before? Then I have the perfect course for you. A Node course that's finally different from the rest. A perfect mix of theory and practice with no waffling and I best practice."
+  },
+  {
+    "id": 6,
+    "price": 120,
+    "img": "https://i.ibb.co/DYrGnnh/MongoDb.png",
+    "name": "MongoDB",
+    "text": "MongoDB is the hottest database solution in the tech world right now, able to power anything from your growing personal project to an enterprise infrastructure.This course will get you up and running with MongoDB quickly, and teach you the core knowledge to build apps centered around Mongo."
+  }
+]

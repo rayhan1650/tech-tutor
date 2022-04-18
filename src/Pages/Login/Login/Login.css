@@ -3,9 +3,14 @@
   height: 84vh;
 }
 
+.my-link a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 576px) {
   .my-login {
     width: 100%;
     padding: 10px;
+    height: 90vh;
   }
 }

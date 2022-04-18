@@ -34,6 +34,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
+              {/* toggle login and sign out  */}
               {user ? (
                 <Nav.Link onClick={() => signOut(auth)} as={Link} to="/login">
                   Sign Out

@@ -66,10 +66,12 @@ const Login = () => {
           Login
         </Button>
       </Form>
+      {/* signin error  */}
       {error ? <p className="text-danger">Error: {error.message}</p> : <p></p>}
       <p className="mt-2 my-link">
         New to Tech Tutor? <Link to="/signup">Please SignUp.</Link>{" "}
       </p>
+      {/* reset password error show */}
       {passwordResetError ? (
         <p className="text-danger">Error: {passwordResetError.message}</p>
       ) : (

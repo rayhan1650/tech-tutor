@@ -11,7 +11,7 @@ const SignUp = () => {
   const confirmPasswordRef = useRef("");
   const [passwordError, setPasswordError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const navigate = useNavigate();
 
   if (loading) {

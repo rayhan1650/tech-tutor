@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -9,6 +12,8 @@ import "./Login.css";
 const Login = () => {
   const emailRef = useRef("");
   const passwordRef = useRef("");
+  const [sendPasswordResetEmail, sending, passwordResetError] =
+    useSendPasswordResetEmail(auth);
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
@@ -61,6 +66,26 @@ const Login = () => {
       {error ? <p className="text-danger">Error: {error.message}</p> : <p></p>}
       <p className="mt-2 my-link">
         New to Tech Tutor? <Link to="/signup">Please SignUp.</Link>{" "}
+      </p>
+      {passwordResetError ? (
+        <p className="text-danger">Error: {passwordResetError.message}</p>
+      ) : (
+        <p></p>
+      )}
+      <p className="mt-2 my-link">
+        Forget Password?
+        <button
+          onClick={async () => {
+            const email = emailRef.current.value;
+            await sendPasswordResetEmail(email);
+            if (email) {
+              alert("Sent email");
+            }
+          }}
+          className="border-0 text-primary bg-transparent"
+        >
+          Reset password
+        </button>{" "}
       </p>
 
       {/* for social login */}

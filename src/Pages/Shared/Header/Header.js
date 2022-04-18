@@ -17,7 +17,7 @@ const Header = () => {
         variant="light"
       >
         <Container>
-          <Navbar.Brand as={Link} className=" fw-bold" to="/">
+          <Navbar.Brand as={Link} className="text-danger fw-bold" to="/">
             TECH TUTOR
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

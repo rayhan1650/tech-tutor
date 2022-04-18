@@ -6,6 +6,7 @@ import {
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Login.css";
 
@@ -21,8 +22,8 @@ const Login = () => {
   let location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
-  if (loading) {
-    return <p>Loading...</p>;
+  if (loading || sending) {
+    return <Loading />;
   }
 
   if (user) {

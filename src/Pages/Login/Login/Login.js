@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Login.css";
@@ -13,12 +13,15 @@ const Login = () => {
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
 
+  let location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
   if (loading) {
     return <p>Loading...</p>;
   }
 
   if (user) {
-    navigate("/");
+    navigate(from, { replace: true });
   }
 
   const handleSubmit = (event) => {

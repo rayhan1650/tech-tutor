@@ -9,10 +9,14 @@ import {
   useLocation,
   Navigate,
 } from "react-router-dom";
+import Loading from "../../Shared/Loading/Loading";
 
 const RequireAuth = ({ children }) => {
   const [user, loading] = useAuthState(auth);
   let location = useLocation();
+  if (loading) {
+    return <Loading />;
+  }
 
   if (!user) {
     // Redirect them to the /login page, but save the current location they were

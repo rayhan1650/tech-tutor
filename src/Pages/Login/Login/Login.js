@@ -9,6 +9,8 @@ import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Login.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -80,7 +82,7 @@ const Login = () => {
             const email = emailRef.current.value;
             await sendPasswordResetEmail(email);
             if (email) {
-              alert("Sent email");
+              toast("Sent email");
             }
           }}
           className="border-0 text-primary bg-transparent"
@@ -91,6 +93,7 @@ const Login = () => {
 
       {/* for social login */}
       <SocialLogin />
+      <ToastContainer />
     </div>
   );
 };
